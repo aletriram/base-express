@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	{{ super() }}
+	{% for %}
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for user in users %}
+				<tr>
+					<td>{{user.nombre}}</td>
+					<td>{{user.apellidos}}</td>
+					<td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
+				</tr>
+			{% else %}
+			<tr>
+				<td colspan="3">No hay resultados</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+{% endblock %}

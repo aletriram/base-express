@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+{% block head %}
+<head>
+	{% block title %}
+	<title>{{title}}</title>
+	{% endblock %}
+
+	{% block metas %}
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="aletriram" />
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% endblock %}
+
+	{% block stylesheets %}
+	<link rel="stylesheet" href="/public/stylesheets/style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	{% endblock %}
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+	{% block top %}
+		<div class="container">
+			{% include "partials/top.html" %}
+		</div>
+	{% endblock %}
+	<div class="container">
+	{% block content %}
+
+	{% endblock %}
+	</div>
+</body>
+{% endblock %}
+
+{% block scripts %}
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+</html>

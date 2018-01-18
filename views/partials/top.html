@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-md-6">
+	{% block navbar %}
+		<ul class="nav nav-tabs nav-justified">
+			<li {% if top == 'index'%} class="active" {% endif %}><a href="/">Home</a></li>
+			<li {% if top == 'users'%} class="active" {% endif %}><a href="/users">Usuarios</a></li>
+		</ul>
+	{% endblock %}
+	</div>
+	<div class="col-md-6">
+		<img src="/public/images/logo.svg" class="img-responsive pull-right" alt="Logo Existo">
+	</div>
+</div>
