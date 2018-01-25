@@ -1,14 +1,18 @@
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-12">
 	{% block navbar %}
-		<ul class="nav nav-tabs nav-justified">
-			<li {% if top == 'index'%} class="active" {% endif %}><a href="/">Home</a></li>
-			<li {% if top == 'users'%} class="active" {% endif %}><a href="/users">Usuarios</a></li>
-			<li><a href="/report">Informe</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="/">Base</a>
+
+			<div class="navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="navbar-item {% if top == 'index'%} active {% endif %}"><a class="nav-link" href="/">Home</a></li>
+					<li class="navbar-item {% if top == 'users'%} active {% endif %}"><a class="nav-link" href="/users">Usuarios</a></li>
+					<li class="navbar-item"><a class="nav-link" href="/report">Informe</a></li>
+				</ul>
+			</div>
+			<img src="/images/logo.svg" class="img-responsive pull-right" alt="Logo Existo">
+		</nav>
 	{% endblock %}
-	</div>
-	<div class="col-md-6">
-		<img src="/images/logo.svg" class="img-responsive pull-right" alt="Logo Existo">
 	</div>
 </div>

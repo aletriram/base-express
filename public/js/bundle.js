@@ -10327,11 +10327,19 @@ return jQuery;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(2);
+module.exports = __webpack_require__(6);
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 __webpack_require__(0);
-__webpack_require__(2);
+__webpack_require__(3);
 // const bootstrap: any = require('bootstrap/dist/js/bootstrap.bundle.min.js');
 var Main = /** @class */ (function () {
     function Main() {
@@ -10342,7 +10350,7 @@ window.Main = new Main();
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -10351,7 +10359,7 @@ window.Main = new Main();
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-	 true ? factory(exports, __webpack_require__(0), __webpack_require__(3)) :
+	 true ? factory(exports, __webpack_require__(0), __webpack_require__(4)) :
 	typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
 	(factory((global.bootstrap = {}),global.jQuery,global.Popper));
 }(this, (function (exports,$,Popper) { 'use strict';
@@ -14242,7 +14250,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16685,10 +16693,10 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5)))
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 var g;
@@ -16713,6 +16721,12 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
