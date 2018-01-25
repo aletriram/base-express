@@ -16,7 +16,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/:id', function (req, res, next) {
 	var user = usuarios[req.params.id];
-	console.log()
 	res.render('users/user', {title: 'Usuario', top: top, user: user})
 });
 
