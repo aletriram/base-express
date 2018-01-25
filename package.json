@@ -3,17 +3,34 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "npx npm-run-all --parallel watch:server watch:build",
+    "watch:build": "npx webpack --watch",
+    "watch:server": "npx nodemon \"./bin/www\""
   },
   "dependencies": {
     "body-parser": "~1.18.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
     "jquery": "^3.2.1",
     "morgan": "~1.9.0",
     "nunjucks": "^3.0.1",
+    "popper.js": "^1.12.9",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^3.3.37",
+    "@types/jquery": "^3.3.0",
+    "@types/popper.js": "^1.11.0",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^3.3.1",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
   }
 }
